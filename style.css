@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+
+body {
+    font-family: 'Nunito', Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.kiosk-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.kiosk {
+    width: 30%;
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: #f8f9fa; /* Default light background */
+    border-radius: 10px; /* Round edges */
+    height: 600px; /* Maintain original height */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for better visibility */
+}
+
+.kiosk-green { background-color: #a4eda4; } /* Light green for kiosk background */
+.kiosk-pink { background-color: #fac0d7; } /* Light pink for kiosk background */
+.kiosk-yellow { background-color: #fcfda2; } /* Light yellow for kiosk background */
+
+.kiosk-green .kiosk-header { background-color: #7abf7a; } /* Darker green for header */
+.kiosk-pink .kiosk-header { background-color: #e17e9f; } /* Darker pink for header */
+.kiosk-yellow .kiosk-header { background-color: #dcde50; } /* Darker yellow for header */
+
+.kiosk-header {
+    padding: 10px;
+    color: #000000;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-size: 25px;
+}
+
+
+.welcome-message {
+    padding-top: 20px;
+    margin: 10px 0;
+    font-size: 20px;
+    color: #333;
+}
+
+.result-message {
+    margin-top: 10px;
+    font-size: 20px;
+    color: #333;
+}
+
+.aisle-footer {
+    width: 100%;
+    max-width: 900px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f8f9fa;
+    text-align: center;
+    margin-top: 0;
+}
+
+.aisle-footer h3 {
+    margin-bottom: 10px;
+}
+
+.aisle-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.aisle-buttons button {
+    width: 50px;
+    height: 50px;
+    margin: 0 5px;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.form-control {
+    margin-bottom: 0;
+}
+
+.search-container {
+    padding-top: 25px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+}
+
+.search-container .form-control {
+    margin-right: 5px;
+    flex: 1;
+}
+
+.search-container .btn {
+    background-color: #f8f9fa; /* Off-white color for search button */
+    border: 1px solid #ccc;
+    padding: 10px;
+    height: 100%; /* Make button height match the search bar */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px; /* Adjust font size for the search icon */
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeInAnimation 2s forwards;
+}
+
+.fade-out {
+    opacity: 1;
+    animation: fadeOutAnimation 2s forwards;
+}
+
+@keyframes fadeInAnimation {
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOutAnimation {
+    to {
+        opacity: 0;
+    }
+}
